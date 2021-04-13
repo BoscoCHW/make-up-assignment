@@ -4,16 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./src/CSS/style.css">
+    <script defer src="./src/app.js"></script>
     <title>Budget App</title>
 </head>
 <body>
     <h1>Budget App</h1>
-    <label for="budget"></label>
-    <input type="number" name="budget" id="budget" placeholder="budget amount">
-    <input type="submit" value="Create Budget">
-
-    <input type="text" name="expanse-item" id="expanse-item" placeholder="expanse-item">
-    <input type="number" name="expanse-amount" id="expanse-amount" placeholder="expanse-amount">
-    <input type="submit" value="Add Expanse Item">
+    <div class="app-wrapper">
+        <div class="add-budget">
+            <input type="number" name="budget" id="budget" placeholder="budget amount" required>
+            <div class="submit-wrapper">
+                <input id="create-budget" type="submit" value="Create Budget">
+            </div>
+        </div>
+        <div class="add-item">
+            <input type="text" name="expanse-item" id="expanse-item" placeholder="expanse-item" required>
+            <input type="number" name="expanse-amount" id="expanse-amount" placeholder="expanse-amount" required>
+            <div class="submit-wrapper">
+                <input id="create-item" type="submit" value="Add Expanse Item">
+            </div>
+        </div>
+        <!-- <div class="budget-display">
+            <p>My Budget: 2000</p>
+            <P>current remaining budget: </P>
+            <ul class="expanse-items">
+                <li class="expanse-item">100 groceries</li>
+                <li class="expanse-item">145.34 shoes</li>
+                <li class="expanse-item">82 watch</li>
+            </ul>
+        </div> -->
+    </div>
 </body>
 </html>
